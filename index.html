@@ -10,19 +10,46 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+  grid-auto-rows: 250px;
+  grid-template-areas:
+    ". a a ."
+    ". a a .";
+  
+}
+.item1 {
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  background-color: white;
+  border-radius: 25px;
+  padding: 3%; 
+  height: 450px;
+  width:290px;
+  margin-top: 50%;
+  
+}
   </style>
 </head>
-<body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="wrapper" style="background-color:hsl(212, 45%, 89%) ;">
+  <div class="item1">
+    <div><img src="images\image-qr-code.png" alt="QR code" style="border-radius: 10px;height:100%;width:100%" ></div>
+    <div ><h2 style="font-weight: 700px;font-family: 'Outfit', sans-serif; text-align: center;" ;>
+      Improve your front-end 
+      skills by building projects
+    </h2>
+    </div>
+     <div> <p style="font-weight: 400;color:hsl(220, 15%, 55%);font-size: 15px;font-family: 'Outfit', sans-serif;text-align:center;">   Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p> </div>
   </div>
+    
+  
 </body>
 </html>
